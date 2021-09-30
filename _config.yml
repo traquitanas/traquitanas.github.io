@@ -13,16 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Traquitanas
+email: michelmetran@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+#twitter_username: username
+github_username: traquitanas
+minimal_mistakes_skin: contrast # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
+timezone: "America/Sao_Paulo" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: pt-BR
+logo: "/assets/images/logo.png"
+
 
 # Build settings
 markdown: kramdown
@@ -58,39 +62,47 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "Michel Metran"
+  avatar: "/assets/images/avatar.png"
+  bio: "um passo a frente e você já não está no mesmo lugar..."
+  location: "Piracicaba, SP"
   links:
-    - label: "Website"
+    - label: "Site"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://michelmetran.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/michelmetran"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/michelmetran"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/michelmetran"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/michelmetran"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/6003328/michel-metran"
+
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/michelmetran"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/michelmetran"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/michelmetran"
 
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -99,6 +111,9 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
+
   # _pages
   - scope:
       path: "_pages"
@@ -106,6 +121,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
+      comments: true
+      share: true
+#     related: true
+#     toc: true
+#     toc_sticky: true
+
 
 category_archive:
   type: liquid

@@ -1,3 +1,8 @@
+.idea/
+_lixo/
+_profile/
+
+
 _site
 .sass-cache
 .jekyll-metadata
