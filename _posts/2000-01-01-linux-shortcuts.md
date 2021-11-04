@@ -65,12 +65,12 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 Adicionar tecla de atalho para o Terminal (equivalente do cmd)
 
 ```bash
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'Teste'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "'hotmilhas'"
 ```
 
 <br>
 
-Tecla de Atalho
+E agora é possível atribuir uma tecla de atalho
 
 ```bash
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Super>j'"
@@ -85,11 +85,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 Adicionar *script*, abrindo o terminal
 
 ```bash
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open-dsa/linguagem/sh/open_jn.sh ; bash'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open_dsa/linguagem/sh/open_jn.sh ; bash'"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open-dsa/linguagem/sh/convert_jn.sh $HOME/Documents/Sourcecode/case_office/jupyter_notebook/hello.ipynb; bash'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open_dsa/linguagem/sh/convert_jn.sh $HOME/Documents/Sourcecode/case_office/jupyter_notebook/hello.ipynb; bash'"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open-dsa/linguagem/sh/convert_jn.sh $HOME/Documents/Sourcecode/case_milhas/hotmilhas.ipynb; bash'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "gnome-terminal -- bash -c '$HOME/Documents/Sourcecode/open_dsa/linguagem/sh/convert_jn.sh $HOME/Documents/Sourcecode/open_cash/hotmilhas/hotmilhas.ipynb; bash'"
 ```
 
 <br>
