@@ -2,7 +2,6 @@
 title: "Samba"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, pandas]
-
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/pandas_icon.png
@@ -14,9 +13,7 @@ tags: [python, pycharm, jupyter, package, pandas]
 #language: pt-br
 ---
 
-
-
-Para acessar os arquivos do Windows, bastar usar o Nautilus (equivalente do Windows Explorer) e digitar “smb://asus-i7”. 
+Para acessar os arquivos do Windows, bastar usar o Nautilus (equivalente do Windows Explorer) e digitar “smb://asus-i7”.
 
 ```bash
 sudo vim /etc/samba/smb.conf
@@ -49,24 +46,14 @@ sudo service smbd restart
 sudo smbpasswd -a michel
 ```
 
-
-
 #### Windows com Ubuntu
 
 ```
 smb://asus-i5/Arquivos/
 ```
 
-
-
-
-
 ```
 sudo gedit /etc/hosts
 ```
-
-
-
-
 
 https://askubuntu.com/questions/923306/connecting-to-a-windows-network-with-ubuntu-16-04-lts
