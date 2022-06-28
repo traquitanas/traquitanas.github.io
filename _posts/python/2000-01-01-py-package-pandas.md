@@ -2,7 +2,6 @@
 title: "Pandas"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, pandas]
-
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/pandas_icon.png
@@ -58,7 +57,7 @@ tab.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -142,7 +141,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -258,7 +257,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -503,7 +502,7 @@ tab
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -710,9 +709,9 @@ tab['neighborhood'] = tab['neighborhood'].str.strip()
 ```
 
     ---------------------------------------------------------------------------
-    
+
     KeyError                                  Traceback (most recent call last)
-    
+
     ~/miniconda/envs/pablocarreira-py36/lib/python3.6/site-packages/pandas/core/indexes/base.py in get_loc(self, key, method, tolerance)
        2896             try:
     -> 2897                 return self._engine.get_loc(key)
@@ -733,14 +732,10 @@ tab['neighborhood'] = tab['neighborhood'].str.strip()
 
     KeyError: 'neighborhood'
 
-  
-
-
-
- During handling of the above exception, another exception occurred:
+During handling of the above exception, another exception occurred:
 
     KeyError                                  Traceback (most recent call last)
-    
+
     <ipython-input-19-6cc4e27805a5> in <module>
           4
           5 # Remove espaços em branco de uma determinada coluna

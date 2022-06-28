@@ -351,7 +351,7 @@ ROLLBACK;
 
 ## _postgresql.conf_
 
-Arquivo que armazena todas as informações das configurações do banco de dados. A _view_ pg_settings, acessada dentro do banco de dados, guarda todas as configurações atuais, sendo necessário, por vezes, reinicializar o bando de dados para que a _view_ seja atualizada.
+Arquivo que armazena todas as informações das configurações do banco de dados. A _view_ pg*settings, acessada dentro do banco de dados, guarda todas as configurações atuais, sendo necessário, por vezes, reinicializar o bando de dados para que a \_view* seja atualizada.
 
 Por padrão, o arquivo encontra-se dentro do diretório PGDATA definido no momento da inicialização do _cluster_ do banco de dados. No Ubuntu, quando instalado pelo repositório oficial, o local do arquivo será diferente do diretório de dados:
 

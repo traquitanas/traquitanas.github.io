@@ -25,6 +25,8 @@ A alteração/contribuição em um dado projeto se dá por meio do comando **_co
 {: .box-error}
 **Informações:** Existem muitos outros comandos existentes a serem aprendidos que ainda não utilizei. Toda a discussão sobre _branchs_..., aplicação do comando **_add_** apenas aos arquivos alterados, evitando o **_git add --all_**. Aqui sintetizei apenas o conhecimento adquirido até o momento que venho utilizando em meus repositórios.
 
+<br>
+
 ### Instalando
 
 Inicialmente é interessante avaliar se o git já não está instalado!
@@ -46,6 +48,8 @@ Senão receber tal mensagem, é necessário instaalr
 sudo apt update && sudo apt install git
 ```
 
+<br>
+
 ### Configurações Iniciais
 
 Uma vez instalado é necessário configura-lo, definindo o usuário e e-mail.
@@ -63,11 +67,13 @@ git config --list
 
 Este comando apresenta o conteúdo do arquivo `~/.gitconfig` e é possível editado diretamente por meio do `sudo gedit ~/.gitconfig`
 
+<br>
+
 ### Github
 
 ```shell
-ssh-keygen -t rsa -b 4096 -C "michelmetran@gmail.com"
-ssh-keygen -t ed25519 -C "michelmetran@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "meu@e-mail.com"
+ssh-keygen -t ed25519 -C "meu@e-mail.com"
 
 cat ~/.ssh/id_rsa.pub
 ```
@@ -81,6 +87,8 @@ cat ~/.ssh/id_rsa.pub
 
 ---
 
+<br>
+
 ### Criar um novo Repositório no PC local
 
 Para criar um repositório, a ser enviado posteriormente para o **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>** (ou qualquer outro serviço para hospedar códigos) é necessário iniciar o _git_, ou seja, o versionamento, em um dado diretório. Para isso basta cria-lo, acessa-lo e iniciá-lo.
@@ -92,6 +100,8 @@ mkdir --parents {Nome do Diretório}
 cd {Nome do Diretório}
 git init
 ```
+
+<br>
 
 ### Clonar (_ou copiar_) um Repositório existente
 
@@ -107,12 +117,16 @@ git clone git@github.com:jekyll/jekyll
 git clone git@github.com:michelmetran/michelmetran.github.io.git
 ```
 
+<br>
+
 #### ... do PC local para o PC local
 
 ```bash
 cd /home/michel/Geodata
 git clone /home/michel/Geodata/SourceCode/jekyll
 ```
+
+<br>
 
 ### Atualizar repositório remoto
 
@@ -145,6 +159,8 @@ Ainda há a possibilidade de adicionar apenas um arquivo a ser _comitado_ por me
 git add {filename}
 ```
 
+<br>
+
 ### Atualizar o repositório local
 
 É possível fazer o **_download_** dos arquivos do **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>**, atualizando o repositório local. Isso é útil quando são realizadas modificações nos arquivos por outros meios (diretamente pelo **<a title="Link do GitHub" href="https://github.com/" target="_blank">GitHub</a>**, por meio do **<a title="Link do StackEdit" href="https://stackedit.io/" target="_blank">StackEdit</a>** ou qualquer outro editor _online_, por exemplo).
@@ -152,6 +168,8 @@ git add {filename}
 ```bash
 git pull origin master
 ```
+
+<br>
 
 ### Outros
 
@@ -193,6 +211,8 @@ git remote rm origin
 
 O que é executado com o comando git remote add origin? Conectar meu repositório a um servidor remoto!
 
+<br>
+
 ### Branching
 
 ```bash
@@ -223,9 +243,13 @@ git checkout {nome da branch}
 git merge {nome da branch a unificar na branch ativa}
 ```
 
-**Referências:**
+<br>
+
+### Referências
 
 - [LinuxHint: **Install Git in Ubuntu 20.04**](https://linuxhint.com/git-source-code-management-system/)
+
+<br>
 
 ### Remote
 

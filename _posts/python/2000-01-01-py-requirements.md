@@ -2,7 +2,6 @@
 title: "Requirements"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package]
-
 #layout: post
 #subtitle: Exercícios e Referências
 #thumbnail-img: /assets/img/posts/jupyter_icon.png
@@ -12,52 +11,51 @@ tags: [python, pycharm, jupyter, package]
 #gh-badge: [follow, star, watch, fork]
 #comments: true
 #language: pt-br
-
 ---
 
-O arquivo *requirements.txt*, usualmente localizado na pasta-raiz do projeto, tem a finalidade de listar quais são os *packages* que foram utilizados naquele determinado projeto.
+O arquivo _requirements.txt_, usualmente localizado na pasta-raiz do projeto, tem a finalidade de listar quais são os _packages_ que foram utilizados naquele determinado projeto.
 
 <!--more-->
 
-Muitas vezes, no curso de um *script*, é possível instalar uma dependência utilizando o ```pip install {nome do pacote}```, porém o arquivo *requirements.txt* se faz fundamental quando os projetos serão acessados por aplicações, tais como ***Django***, ***Flask***, ***Heroku*** e ***MyBinder***, por exemplo, sendo esse o motivo principal para criar esse arquivo.
+Muitas vezes, no curso de um _script_, é possível instalar uma dependência utilizando o `pip install {nome do pacote}`, porém o arquivo _requirements.txt_ se faz fundamental quando os projetos serão acessados por aplicações, tais como **_Django_**, **_Flask_**, **_Heroku_** e **_MyBinder_**, por exemplo, sendo esse o motivo principal para criar esse arquivo.
 
+<br>
 
+### _Pip Freeze_
 
-### *Pip Freeze*
+O comando `pip freeze` é o mais difundido na internet para se criar o arquivo _requirements.txt_, ou seja, o arquivo com o qual é possível indicar quais os _packages_ necessários para rodar um determinado _script_. O problema é que **ele não lista apenas** os _packages_ utilizados em um determinado _script_, listando **TODOS** os _packages_ de instalados no _python_ (ou ambiente _python_).
 
-O comando ```pip freeze``` é o mais difundido na internet para se criar o arquivo *requirements.txt*, ou seja, o arquivo com o qual é possível indicar quais os *packages* necessários para rodar um determinado *script*. O problema é que **ele não lista apenas** os *packages* utilizados em um determinado *script*, listando **TODOS** os *packages* de instalados no *python* (ou ambiente *python*).
-
-Particularmente eu utilizo *enviroments* do Conda, com dezenas de pacotes instalados em cada *enviroments*, e os arquivos *requirements.txt* ficavam muito extensos, apresentando alguns problemas.
+Particularmente eu utilizo _enviroments_ do Conda, com dezenas de pacotes instalados em cada _enviroments_, e os arquivos _requirements.txt_ ficavam muito extensos, apresentando alguns problemas.
 
 ```python
 #pip freeze > requirements.txt
 ```
 
+<br>
 
+### _Pipreqs_
 
-### *Pipreqs*
-
-O pacote [**pipreqs**](https://pypi.org/project/pipreqs/), pelas descrições, pareceu atender a demanda de lista **APENAS** os pacotes de um determinado projeto. Porém ele não funciona diretamente no *Juptyter Notebook*, motivo que foi preciso inserir um ponto de exclamação no início do comando, para que o *jupyter* interpretasse que se trata de um comando a ser feito em *bash*.
+O pacote [**pipreqs**](https://pypi.org/project/pipreqs/), pelas descrições, pareceu atender a demanda de lista **APENAS** os pacotes de um determinado projeto. Porém ele não funciona diretamente no _Juptyter Notebook_, motivo que foi preciso inserir um ponto de exclamação no início do comando, para que o _jupyter_ interpretasse que se trata de um comando a ser feito em _bash_.
 
 ```python
 !pipreqs '.' --force --debug --print
 ```
 
+<br>
 
+### _Environment.yml_
 
-### *Environment.yml*
-
-Descobri ainda que o comando ``` conda env export > environment.yml``` pode auxiliar na criação destes parâmetros, não sendo exatamente o que se busca, ou seja, o arquivo *requirements.txt* necessário para aplicações.
+Descobri ainda que o comando ` conda env export > environment.yml` pode auxiliar na criação destes parâmetros, não sendo exatamente o que se busca, ou seja, o arquivo _requirements.txt_ necessário para aplicações.
 
 ```python
 #!conda env export > environment.yml
 ```
 
-
+<br>
 
 ### PIP
 
-É possível, dentro de um ambiente *conda*, instalar um *package* por meio do *pip*, usando o comando.
+É possível, dentro de um ambiente _conda_, instalar um _package_ por meio do _pip_, usando o comando.
 
 ```python
 pip install {package name}

@@ -2,15 +2,6 @@
 title: "GSpread"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, gspread]
-#layout: post
-#subtitle: Exercícios e Referências
-#thumbnail-img: /assets/img/posts/gspread_icon.png
-#share-img: /assets/img/posts/gspread_big.png
-#cover-img: /assets/img/posts/gspread_big.png
-#gh-repo: michelmetran/package_gspread
-#gh-badge: [follow, star, watch, fork]
-#comments: true
-#language: pt-br
 ---
 
 O <a title="Link do GSpread" href="https://gspread.readthedocs.io/en/latest/api.html" target="_blank">**_GSpread_**</a> é um pacote que possibilita a edição e obtenção de dados das planilhas do _Google SpreadSheet_, utilizando _Python_. Ou seja, é possível manipular os dados utiliznado toda uma variedade de _packages_ do _Python_ e inseri-los em _Google Spreadsheets_.
@@ -65,6 +56,8 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 ```
 
+<br>
+
 Escolhe a planilha e aba a ser editada
 
 ```python
@@ -77,6 +70,8 @@ wkb = gc.open_by_key('1bRwjoieInaRkmoyvlisMtDi-2kZ-5CvyKEQ2V_Xk1U8')    # Pelo I
 wks = wkb.get_worksheet(0)             # Pela ordem, começando com 0
 #wks = wkb.worksheet('January')        # Pelo nome da aba
 ```
+
+<br>
 
 # Escrevendo Dados
 
@@ -96,6 +91,8 @@ wks.update_cell(1, 2, 'Bingo!')
 %run '~/Documents/SourceCode/codes/files/str_today.py'
 wks.update_acell('A2', srt_today())
 ```
+
+<br>
 
 ## Conjunto de Células
 

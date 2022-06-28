@@ -29,11 +29,15 @@ pactl set-port-latency-offset <NAME> <PORT> <BUFFER_SIZE_MICROSECONDS>
 pactl set-port-latency-offset bluez_card.E8_07_BF_01_4D_CD headset-output 50000
 ```
 
+<br>
+
 Reiniciar o _bluetooth_
 
 ```bash
 sudo service bluetooth restart
 ```
+
+<br>
 
 **Referências**
 

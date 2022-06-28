@@ -94,6 +94,7 @@ choco install miniconda3 --params="'/AddToPath:1'" -y
 choco install microsoft-windows-terminal -y
 choco install dotnetfx -y
 choco install vcredist140 -y
+choco install tableau-public -y
 
 # Mídia
 choco install vlc -y
