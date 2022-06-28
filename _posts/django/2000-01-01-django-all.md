@@ -297,7 +297,7 @@ class CoreConfig(AppConfig):
 
 <br>
 
-Para isso é necessário inserir o comando abaixo no arquivo **_**init**.py_**
+Para isso é necessário inserir o comando abaixo no arquivo **\_**init**.py\_**
 
 ```python
 default_app_config = 'core.apps.CoreConfig'

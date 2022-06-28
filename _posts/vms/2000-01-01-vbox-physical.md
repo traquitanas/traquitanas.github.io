@@ -20,21 +20,29 @@ Visando fazer testes com o Sistema Operacional instalado no PC, sem risco de cor
 Notei que tutoriais mais antigos apresentavem uma série de passos adicionais para criar partições ocultas do Windows, possibilitando o *boot*.
 [How to: Windows 10 Physical to VirtualBox](https://community.spiceworks.com/how_to/148559-windows-10-physical-to-virtualbox). Aparentemente isso não se faz mais necessário.
 
+<br>
+
 ## Disk2vhd
 
 Utilizando o aplicativo SysInternal [Disk2vhd](https://docs.microsoft.com/pt-br/sysinternals/downloads/disk2vhd) é possível converter uma máquina física, ou seja, um Sistema operacional instalado em um PC, em um arquivo *.vhd*
 
 ![](https://i.imgur.com/ThhnTUx.png)
 
+<br>
+
 O processo pode ser demorado e necessita que você tenho acesso de administrador no Windows *host* para copiar o Sistema Operacional.
 
 ![](https://i.imgur.com/wYFBMNE.png)
+
+<br>
 
 ## Passos
 
 Após feito isso, usando o VirtualBox eu criei nova máquina, com configurações simples, e indiquei um disco existente, ou seja, o arquivo *.vhd* recem criado.
 
 Abri minha máquina virtual, deletei alguns programas visando "dar uma limpada". Removi bastante coisa!
+
+<br>
 
 ## Compactação
 

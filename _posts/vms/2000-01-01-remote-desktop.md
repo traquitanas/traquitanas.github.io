@@ -2,7 +2,6 @@
 title: "Remote Desktop"
 excerpt_separator: "<!--more-->"
 tags: [python, pycharm, jupyter, package, pandas]
-
 #layout: post
 #title: Jupyter Notebook
 #subtitle: Exercícios e Referências
