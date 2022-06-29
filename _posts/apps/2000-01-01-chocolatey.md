@@ -1,7 +1,10 @@
 ---
 title: "Chocolatey"
+date: 2019-01-00T00:00:00-03:00
+last_modified_at: 2022-06-28T00:00:00-03:00
 excerpt_separator: "<!--more-->"
-tags: [python, pycharm, jupyter, package, pandas]
+categories: [apps]
+#tags: [python, pycharm, jupyter, package, pandas]
 #layout: post
 #title: Jupyter Notebook
 #subtitle: Exercícios e Referências
@@ -18,6 +21,8 @@ Nunca gostei de instalar aplicativos no Windows. É uma tarefa chata, após cada
 Para facilitar essa etapa, eu costumava ter uma pasta de executáveis (arquivos _.exe_) para instalar os aplicativos. Os arquivos executáveis usualmente grandes, ocupavam bastante espaço em um HD e, frequentemente, estavam desatualizados!
 
 Quando passei a usar o Ubuntu, vi o quão fácil é instalar um aplicativo por meio de uma linha de comando. Achava mágico, com um simples comando `sudo apt install code`, ter o editor VsCode instalado no meu PC, por exemplo.
+
+<!--more-->
 
 Essa facilidade me fez buscar usar e aprender aplicativos que sejam de fácil instalação e manutenção. Com isso, passei a usar/buscar projetos _freeware_, que não dependessem de pirataria, _cracks_, _patchs_, _keygens_ os quais, além de dependerem de ajustes manuais, também contribuem (e muito!) para aumentar a vulnerabilidade dos PC.
 
@@ -46,7 +51,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Help
 choco -?
 
-# Procurar Pacote
+# Procurar pacote
 choco search hugo
 
 # Atualizar Choco
@@ -55,7 +60,7 @@ choco upgrade chocolatey
 # Atualiza tudo
 choco upgrade all -y
 
-# Lista Pacotes Instalados pelo choco
+# Lista pacotes instalados pelo choco
 choco list --local-only
 ```
 
@@ -65,7 +70,7 @@ choco list --local-only
 
 ## Instalando Aplicativos
 
-Abaixo listei os aplicativos que eu uso, porém existem muito outros [*packages*](https://community.chocolatey.org/packages) disponíveis.
+Abaixo listei os aplicativos que eu uso, porém existem muito outros [_packages_](https://community.chocolatey.org/packages) disponíveis.
 
 ```powershell
 # Internet
@@ -104,16 +109,4 @@ choco install inkscape -y
 # Manutenção
 choco install ccleaner -y
 choco install treesizefree -y
-```
-
-<br>
-
----
-
-## PowerShell
-
-Sempre que abria o PowerShell, recebia um alerta sobre atualização. Utilizando o comando abaixo, no PowerSheel 6, é possível atualizar (rodar como admin) para o PS7, conforme explicado, em detalhes, no artigo [How to Install and Update PowerShell 6](https://www.thomasmaurer.ch/2019/03/how-to-install-and-update-powershell-6/).
-
-```powershell
-iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
 ```

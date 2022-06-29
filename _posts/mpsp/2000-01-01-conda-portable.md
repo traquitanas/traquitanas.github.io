@@ -1,7 +1,10 @@
 ---
 title: "Conda"
+date: 2019-01-00T00:00:00-03:00
+last_modified_at: 2022-06-28T00:00:00-03:00
 excerpt_separator: "<!--more-->"
-tags: [linux, git, github, gitpages, python, pycharm, anaconda, miniconda]
+tags: [conda]
+categories: [mpsp]
 ---
 
 Ao tentar criar um enviroment no conda, na rede institucional, recebia o seguinte erro:
@@ -10,8 +13,10 @@ Ao tentar criar um enviroment no conda, na rede institucional, recebia o seguint
 
 <br>
 
-Estudando o problema, encontrei uma solução no [StackOverflow](https://stackoverflow.com/questions/42563757/conda-update-condahttperror-http-none), que sugere que seja removido a verificação do ssl.
+Estudando o problema, encontrei uma solução preliminar no [StackOverflow](https://stackoverflow.com/questions/42563757/conda-update-condahttperror-http-none), que sugere que seja removido a verificação do ssl.
 
-```
+```bash
 conda config --set ssl_verify no
 ```
+
+Sabemos das implicações de fazer isso, porém é a única alternativa encontrada no momento.

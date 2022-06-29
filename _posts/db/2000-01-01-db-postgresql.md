@@ -1,9 +1,9 @@
 ---
-title: "DB: PostGreSQL"
+title: "PostGreSQL"
 date: 2019-06-13T15:34:30-04:00
 last_modified_at: 2021-07-09T16:20:02-05:00
 excerpt_separator: "<!--more-->"
-categories: [blog]
+categories: [database]
 tags: [database, postgre, sql]
 #layout: post
 #title: Jupyter Notebook
